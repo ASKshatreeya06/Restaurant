@@ -69,7 +69,7 @@
    /* flex-direction: column; */
 }
 
-#item{
+.item{
     margin: 1%;
     height: 350px;
     width: 240px;
@@ -77,6 +77,10 @@
    
     border: 1px solid lightblue;
     background-color: rgb(138, 138, 234);
+}
+.item:hover{
+    height: 400px;
+    width: 300px;
 }
 .item_image{
     height: 75%;
@@ -90,6 +94,13 @@
 .item_details{
     display: flex;
     flex-direction: row;
+}
+.item_details:hover{
+    background-color: green;
+    border-end-start-radius: 10%;
+    border-end-end-radius: 10%;
+    border-left: 3px solid black;
+    border-top:3px solid black;
 }
 .item_details>div>span{
     font-size: 30px;
