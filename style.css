@@ -1,0 +1,112 @@
+/* create navbar flex for contenting inline item  */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: rgb(188, 68, 68);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* set the logo height */
+#logo {
+    height: 23px;
+
+}
+
+#search_btn {
+    width: 50px;
+    position: absolute;
+    height: 22px;
+
+}
+
+.btn>button {
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+
+}
+
+.btn>button>a{
+    text-decoration: none;/* remove underline for <a> tag inside button*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+   
+
+}
+
+.banner{
+    margin-top: 1%;
+    background-image: url('https://img.freepik.com/free-psd/fast-food-restaurant-banner-template_23-2148987500.jpg?w=1800&t=st=1695566140~exp=1695566740~hmac=e40d38050c21dbaca7f0a084f6adce266d13a8395e52c5e2a84999e04adb4988');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;/* set the background image height and width*/
+
+    height: 500px; /* set the height for banner*/
+
+}
+.banner>h1{
+    margin-top: 460px;
+    text-align-last: center;
+}
+
+
+
+.item_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.item_body>div{
+    display: flex;
+   /* flex-direction: column; */
+}
+
+#item{
+    margin: 1%;
+    height: 350px;
+    width: 240px;
+    border-radius: 5%;
+   
+    border: 1px solid lightblue;
+    background-color: rgb(138, 138, 234);
+}
+.item_image{
+    height: 75%;
+    background-color: rgb(13, 107, 189);
+}
+.item_image>img{
+    height: 100%;
+    width: 100%;
+
+}
+.item_details{
+    display: flex;
+    flex-direction: row;
+}
+.item_details>div>span{
+    font-size: 30px;
+    margin-left:10% ;
+    text-align: center;
+    display: block;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item_details>.offer>h1{
+    margin: 0;
+    padding-left:50% ;
+}
+.offer>span>b{
+    margin: -10px;;
+    font-size: 50px;
+}
