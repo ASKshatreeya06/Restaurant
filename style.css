@@ -1,3 +1,8 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 /* create navbar flex for contenting inline item  */
 .navbar {
     display: flex;
@@ -8,6 +13,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /* set the logo height */
@@ -15,6 +21,11 @@
     height: 23px;
 
 }
+#logo:hover{
+    transition: 0.5s ease;
+    rotate:360deg;
+}
+
 
 #search_btn {
     width: 50px;
@@ -37,14 +48,48 @@
     padding: 0;
     font-weight: bold;
     font-size: 20px;
-    background-color: rgb(39, 106, 84);
+    background-color:  #3e8e41;
 }
 
 .btn>button>a {
     text-decoration: none;
 }
+/* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid black;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
+/* body start form here */
 
 .container {
     display: flex;
@@ -184,19 +229,28 @@ footer {
     ;
 }
 
+footer>ul {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+}
+
 .footer_list {
     list-style-type: none;
+
 }
 
 .footer_list>a {
     color: black;
     text-decoration: none;
     font-size: 20px;
+
 }
 
 #copywrite {
-    margin-bottom: 5%;
+    margin-top: .5%;
 }
+
 
 /* here end index page css */
 
@@ -204,15 +258,15 @@ footer {
 /* Starting to contact.html designing */
 .contact {
     z-index: 1;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-     justify-items: center;
-   
+    justify-items: center;
+
     background-image: url('https://c8.alamy.com/comp/2GE2T58/cozy-evening-in-luxury-restaurant-beautiful-interior-of-restaurant-in-warm-mild-candlelight-night-cafe-urban-style-city-life-2GE2T58.jpg');
     /* background-repeat: no-repeat; */
     height: 100%;
     width: 100%;
-   
+
 }
 
 .contact>form {
@@ -225,27 +279,68 @@ footer {
     padding: 1%;
     /* justify-content: center; */
     text-align: center;
-   background-image: linear-gradient(to bottom, rgb(150, 60, 155),rgb(107, 59, 198),rgb(168, 51, 144),rgb(210,57,255),rgb(201,154,109),rgb(10,45,75),rgb(150,60,155));
-    
+    background-image: linear-gradient(to bottom, rgb(150, 60, 155), rgb(107, 59, 198), rgb(168, 51, 144), rgb(210, 57, 255), rgb(201, 154, 109), rgb(10, 45, 75), rgb(150, 60, 155));
+
 }
-form>label{
+
+form>label {
     display: block;
     margin-right: 60%;
     margin-top: 2%;
     font-weight: bold;
 }
-form>input{
+
+form>input {
     width: 75%;
     text-align: center;
+    font-size: 20px;
+    
 }
-form>button{
+
+form>button {
     margin-top: 15%;
     font-size: 20px;
     padding: 2% 4%;
     border-radius: 5px;
 }
-form>button:hover{
+
+form>button:hover {
     background-color: lightgreen;
     font-weight: bold;
 }
 
+/* About design start form here  */
+.About {
+
+    display: flex;
+    flex-direction: row;
+    background-image: url('https://thumbs.dreamstime.com/b/empty-wood-table-top-blur-night-pub-restaurant-background-selective-focus-using-mock-up-template-craft-display-your-146982816.jpg');
+}
+
+.About>div {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 50%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.div_first {
+    padding: 3%;
+    margin-left: 2%;
+    background-image: linear-gradient(45deg, #ff8c00, #fff000, #98f050, #e7c137, transparent);
+}
+
+.About>.div_nd>img {
+    margin-left: 26%;
+    margin-top: 1%;
+    height: 600px;
+    border-radius: 50%;
+    
+    
+}
+/* rorate image clock wise */
+.About>.div_nd>img:hover{
+    transition: 0.5s ease;
+    rotate:360deg;
+}
