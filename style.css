@@ -24,100 +24,228 @@
 }
 
 .btn>button {
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
 
 }
 
-.btn>button>a{
-    text-decoration: none;/* remove underline for <a> tag inside button*/
+.btn>button:hover {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(39, 106, 84);
 }
+
+.btn>button>a {
+    text-decoration: none;
+}
+
+
 
 .container {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-   
+
 
 }
 
-.banner{
+.banner {
     margin-top: 1%;
     background-image: url('https://img.freepik.com/free-psd/fast-food-restaurant-banner-template_23-2148987500.jpg?w=1800&t=st=1695566140~exp=1695566740~hmac=e40d38050c21dbaca7f0a084f6adce266d13a8395e52c5e2a84999e04adb4988');
     background-repeat: no-repeat;
-    background-size: 100% 100%;/* set the background image height and width*/
+    background-size: 100% 100%;
+    /* set the background image height and width*/
 
-    height: 500px; /* set the height for banner*/
+    height: 500px;
+    /* set the height for banner*/
+    text-align: center;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 40px;
 
 }
-.banner>h1{
-    margin-top: 460px;
-    text-align-last: center;
+
+.banner>span {
+    margin-top: 430px;
+    text-align-last: center !important;
+    /* style */
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: banner 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes banner {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
 }
 
 
 
-.item_body{
+.item_body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 
-.item_body>div{
+.item_body>div {
     display: flex;
-   /* flex-direction: column; */
+    /* flex-direction: column; */
 }
 
-.item{
+.item {
     margin: 1%;
     height: 350px;
-    width: 240px;
-    border-radius: 5%;
-   
+    width: 230px;
+    border-end-start-radius: 5%;
+    border-end-end-radius: 5%;
+
     border: 1px solid lightblue;
     background-color: rgb(138, 138, 234);
 }
-.item:hover{
+
+.item:hover {
     height: 400px;
-    width: 300px;
+    width: 280px;
 }
-.item_image{
+
+.item_image {
     height: 75%;
     background-color: rgb(13, 107, 189);
 }
-.item_image>img{
+
+.item_image>img {
     height: 100%;
     width: 100%;
 
 }
-.item_details{
+
+.item_details {
     display: flex;
     flex-direction: row;
 }
-.item_details:hover{
+
+.item_details:hover {
     background-color: green;
     border-end-start-radius: 10%;
     border-end-end-radius: 10%;
     border-left: 3px solid black;
-    border-top:3px solid black;
+    border-top: 3px solid black;
 }
-.item_details>div>span{
-    font-size: 30px;
-    margin-left:10% ;
+
+.item_details>div>span {
+    font-size: 20px;
+    margin-left: 10%;
     text-align: center;
     display: block;
 }
-.offer{
+
+.offer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.item_details>.offer>h1{
+
+.item_details>.offer>h1 {
     margin: 0;
-    padding-left:50% ;
+    padding-left: 50%;
 }
-.offer>span>b{
-    margin: -10px;;
-    font-size: 50px;
+
+.offer>span>b {
+    margin: -10px;
+    ;
+    font-size: 30px;
 }
+
+/* footer section disign */
+footer {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(188, 68, 68);
+    ;
+}
+
+.footer_list {
+    list-style-type: none;
+}
+
+.footer_list>a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#copywrite {
+    margin-bottom: 5%;
+}
+
+/* here end index page css */
+
+
+/* Starting to contact.html designing */
+.contact {
+    z-index: 1;
+    display: flex; 
+    flex-direction: column;
+     justify-items: center;
+   
+    background-image: url('https://c8.alamy.com/comp/2GE2T58/cozy-evening-in-luxury-restaurant-beautiful-interior-of-restaurant-in-warm-mild-candlelight-night-cafe-urban-style-city-life-2GE2T58.jpg');
+    /* background-repeat: no-repeat; */
+    height: 100%;
+    width: 100%;
+   
+}
+
+.contact>form {
+
+    margin: 3% 0 0 35%;
+    height: 550px;
+    width: 400px;
+    border: 2px inset black;
+    border-radius: 5%;
+    padding: 1%;
+    /* justify-content: center; */
+    text-align: center;
+   background-image: linear-gradient(to bottom, rgb(150, 60, 155),rgb(107, 59, 198),rgb(168, 51, 144),rgb(210,57,255),rgb(201,154,109),rgb(10,45,75),rgb(150,60,155));
+    
+}
+form>label{
+    display: block;
+    margin-right: 60%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+form>input{
+    width: 75%;
+    text-align: center;
+}
+form>button{
+    margin-top: 15%;
+    font-size: 20px;
+    padding: 2% 4%;
+    border-radius: 5px;
+}
+form>button:hover{
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
